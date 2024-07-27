@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tick Tocks on Terrace | Honesdale Restaurant</title>
+    <meta name="description" content="Tick Tocks on Terrace - Your neighborhood gathering place in Honesdale. Enjoy our delicious menu, join our loyalty program, and explore local attractions including Lake Wallenpaupack, the Poconos, and more.">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Tick Tocks on Terrace",
+      "image": "https://ticktocksonterrace.com/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main St",
+        "addressLocality": "Honesdale",
+        "addressRegion": "PA",
+        "postalCode": "18431",
+        "addressCountry": "US"
+      },
+      "telephone": "+1-123-456-7890",
+      "url": "https://ticktocksonterrace.com",
+      "menu": "https://ticktocksonterrace.com/menu",
+      "servesCuisine": "American",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "11:00",
+          "closes": "22:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/ticktocksonterrace",
+        "https://www.instagram.com/ticktocksonterrace"
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo"><a href="#home">Tick Tocks on Terrace</a></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#loyalty">Loyalty Program</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#local-attractions">Local Attractions</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Tick Tocks on Terrace</h1>
+        <p>Your Neighborhood Gathering Place in Honesdale</p>
+        <a href="#menu" class="cta-button">Explore Menu</a>
+        <a href="#loyalty" class="cta-button">Join Our Loyalty Program</a>
+    </section>
+
+    <!-- Interactive Menu -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-filters">
+            <button onclick="filterMenu('all')">All</button>
+            <button onclick="filterMenu('starters')">Starters</button>
+            <button onclick="filterMenu('mains')">Mains</button>
+            <button onclick="filterMenu('desserts')">Desserts</button>
+            <button onclick="filterMenu('drinks')">Drinks</button>
+        </div>
+        <div class="menu-items" id="menuItems">
+            <!-- Menu items will be populated here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Loyalty Program -->
+    <section id="loyalty" class="loyalty">
+        <h2>Join Our Loyalty Program</h2>
+        <p>Sign up to receive exclusive offers, discounts, and more!</p>
+        <form id="loyaltyForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <!-- Local Attractions -->
+    <section id="local-attractions" class="local-attractions">
+        <h2>Explore the Area</h2>
+        <div class="attraction-category">
+            <h3>Outdoor Activities</h3>
+            <ul>
+                <li><strong>Lake Wallenpaupack</strong> - Boating, kayaking, fishing, and hiking. <a href="https://www.poconomountains.com/things-to-do/outdoor-adventures/lake-wallenpaupack/" target="_blank">Learn more</a></li>
+                <li><strong>Promised Land State Park</strong> - Hiking, camping, and wildlife spotting. <a href="https://www.poconomountains.com/listing/promised-land-state-park/207/" target="_blank">Learn more</a></li>
+                <li><strong>Lacawac Sanctuary</strong> - Nature trails and environmental education. <a href="https://www.lacawac.org/" target="_blank">Learn more</a></li>
+            </ul>
+        </div>
+        <div class="attraction-category">
+            <h3>Family Fun</h3>
+            <ul>
+                <li><strong>Claws 'N' Paws Wild Animal Park</strong> - A family-friendly zoo. <a href="https://www.clawsnpaws.com/" target="_blank">Learn more</a></li>
+                <li><strong>Palmyra Township Public Beach</strong> - Swimming and picnicking. <a href="https://palmyratownship.com/park-beach/" target="_blank">Learn more</a></li>
+                <li><strong>Gresham’s Ice Cream Shoppe</strong> - Homemade ice cream accessible by boat. <a href="https://www.greshamsicecreamshoppe.com/" target="_blank">Learn more</a></li>
+            </ul>
+        </div>
+        <div class="attraction-category">
+            <h3>Cultural and Historical Attractions</h3>
+            <ul>
+                <li><strong>Wayne County Historical Society & Museum</strong> - Showcasing local history. <a href="https://www.waynehistorypa.com/" target="_blank">Learn more</a></li>
+                <li><strong>The Stourbridge Line</strong> - Scenic train rides through the Poconos. <a href="https://www.thestourbridgeline.net/" target="_blank">Learn more</a></li>
+            </ul>
+        </div>
+        <div class="attraction-category">
+            <h3>Entertainment and Shopping</h3>
+            <ul>
+                <li><strong>Harmony in the Woods</strong> - Outdoor concert venue. <a href="https://harmonyinthewoods.org/" target="_blank">Learn more</a></li>
+                <li><strong>Hawley Silk Mill</strong> - Shops, galleries, and eateries. <a href="https://hawleysilkmill.com/" target="_blank">Learn more</a></li>
+                <li><strong>The Crossings Premium Outlets</strong> - Outlet shopping. <a href="https://www.premiumoutlets.com/outlet/the-crossings" target="_blank">Learn more</a></li>
+                <li><strong>The Wallflower Boutique</strong> - Boutique shopping in Honesdale. <a href="https://www.thewallflowerhonesdale.com/" target="_blank">Learn more</a></li>
+            </ul>
+        </div>
+        <div class="attraction-category">
+            <h3>Farm Markets</h3>
+            <ul>
+                <li><strong>Cavage's Farm Market</strong> - Fresh produce and goods. <a href="https://www.cavagesfarmmarket.com/" target="_blank">Learn more</a></li>
+                <li><strong>Ritter's Farm Market</strong> - Fresh fruits and vegetables. <a href="https://www.rittersfarmmarket.com/" target="_blank">Learn more</a></li>
+                <li><strong>Callicoon Farm Market</strong> - Local produce and products. <a href="https://callicoonfarmersmarket.org/" target="_blank">Learn more</a></li>
+            </ul>
+        </div>
+        <div class="attraction-category">
+            <h3>Summer Camps</h3>
+            <ul>
+                <li><strong>Wayne County Summer Camps</strong> - Various summer camps in Wayne County. <a href="https://www.waynecountycamps.com/our-camps/" target="_blank">Learn more</a></li>
+            </ul>
+        </div>
+        <div class="attraction-category">
+            <h3>Flyfishing
+
+    <section id="about" class="about">
+        <h2>About Us
